@@ -37,10 +37,7 @@ public class Student implements Comparable<Student>, Comparator<String> {
         return studentNr - o.getStudentNr();
     }
 
-    @Override
-    public int compare(String o1, String o2) {
-        return o1.compareTo(o2);
-    }
+
 
     @Override
     public int hashCode() {
@@ -48,7 +45,17 @@ public class Student implements Comparable<Student>, Comparator<String> {
     }
 
     @Override
+    public int compare(String o1, String o2) {
+        return o1.compareTo(o2);
+    }
+
+    @Override
     public boolean equals(Object obj) {
         return super.equals(obj);
+    }
+
+    @Override
+    public String toString(){
+        return name;
     }
 }

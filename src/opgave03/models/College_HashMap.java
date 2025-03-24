@@ -58,4 +58,7 @@ public class College_HashMap {
         return navn;
     }
 
+    public HashMap<Integer, Student> getStudentHashMap() {
+        return studentHashMap;
+    }
 }

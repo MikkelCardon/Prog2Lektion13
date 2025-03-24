@@ -14,10 +14,7 @@ public class RangeIterator implements Iterator<Integer> {
 
     @Override
     public boolean hasNext() {
-        if (index < end){
-            return true;
-        }
-        return false;
+       return index < end;
     }
 
     @Override
