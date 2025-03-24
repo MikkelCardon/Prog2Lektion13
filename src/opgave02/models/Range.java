@@ -1,6 +1,8 @@
 package opgave02.models;
 
+import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
 
 public class Range implements Iterable<Integer>{
     private int from;
@@ -13,6 +15,6 @@ public class Range implements Iterable<Integer>{
 
     @Override
     public Iterator<Integer> iterator() {
-        return null;
+        return new RangeIterator(from, to+1);
     }
 }
